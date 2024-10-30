@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd' xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tasktop.releng.poms</groupId>
+    <artifactId>docker-build</artifactId>
+    <version>27</version>
+    <relativePath></relativePath>
+  </parent>
+
+  <name>Hub :: Docker Images</name>
+  <groupId>com.tasktop.hub</groupId>
+  <artifactId>docker-images</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+
+  <scm>
+    <connection>scm:git:ssh://review.tasktop.com:29418/com.tasktop.data</connection>
+    <developerConnection>scm:git:ssh://review.tasktop.com:29418/com.tasktop.data</developerConnection>
+    <tag>master</tag>
+    <url>https://review.tasktop.com/gitweb?p=com.tasktop.data.git</url>
+  </scm>
+
+  <modules>
+    <module>maven-hub</module>
+  </modules>
+
+  <repositories>
+    <repository>
+      <id>tasktop-release</id>
+      <url>https://artifactory.van.tasktop.com/artifactory/tasktop-release/</url>
+    </repository>
+  </repositories>
+
+</project>
